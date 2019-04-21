@@ -1,7 +1,8 @@
 @charset "UTF-8";
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: verdanab, sans-serif; }
 
 .container {
   /* центрврование */
@@ -9,10 +10,37 @@ body {
   margin: 0 auto; }
 
 .header {
-  background: url(../img/bg/bg.jpg) center no-repeat;
+  background: #999 url(.../img/bg/3-layers.png) center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   padding: 0;
   margin: 0; }
+  .header h1 {
+    margin-top: 180px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 74px; }
+  .header p {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px; }
+  .header .header-button {
+    margin-top: 46px; }
+    .header .header-button button {
+      padding: 25px 52px;
+      width: 215px;
+      height: 65px;
+      border-radius: 45%;
+      font-size: 20px;
+      font-weight: 400;
+      color: #ffffff;
+      text-align: center; }
+    .header .header-button .button-left {
+      background-color: #fe504f; }
+    .header .header-button .button-right {
+      background-color: #343434;
+      margin-left: 30px; }
 
 .nav {
   display: -webkit-box;
@@ -20,7 +48,8 @@ body {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  padding-top: 60px; }
   .nav .logo {
     margin-right: 400px;
     font-size: 32px;
@@ -44,7 +73,8 @@ body {
       font-size: 14px;
       height: 12px;
       text-transform: uppercase;
+      color: #ffffff;
       font-family: verdana, sans-serif; }
     .nav ul a:hover, .nav li a:hover {
-      color: #000;
+      color: #fff;
       border-bottom: 3px solid #fe504f; }
