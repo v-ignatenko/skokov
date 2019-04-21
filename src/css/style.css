@@ -10,9 +10,8 @@ body {
   margin: 0 auto; }
 
 .header {
-  background: #999 url(.../img/bg/3-layers.png) center no-repeat;
+  background: #999 url(../../img/bg/3-layers.png) center no-repeat fixed;
   background-size: cover;
-  background-attachment: fixed;
   padding: 0;
   margin: 0; }
   .header h1 {
@@ -28,10 +27,8 @@ body {
   .header .header-button {
     margin-top: 46px; }
     .header .header-button button {
-      padding: 25px 52px;
-      width: 215px;
-      height: 65px;
-      border-radius: 45%;
+      padding: 23px 52px;
+      border-radius: 75%;
       font-size: 20px;
       font-weight: 400;
       color: #ffffff;
