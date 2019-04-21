@@ -1,2 +1,41 @@
+@charset "UTF-8";
 body {
-  background-color: #000; }
+  margin: 0;
+  padding: 0; }
+
+.container {
+  /* центрврование */
+  width: 1140px;
+  margin: 0 auto; }
+
+.header {
+  padding: 0;
+  margin: 0; }
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .nav figure img {
+    margin-right: 260px; }
+  .nav .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .nav ul, .nav li {
+    display: block;
+    padding: 0;
+    margin: 0; }
+    .nav ul a, .nav li a {
+      text-decoration: none;
+      margin-left: 50px;
+      font-size: 14px;
+      height: 12px;
+      text-transform: uppercase;
+      font-family: verdana, sans-serif; }
+    .nav ul a:hover, .nav li a:hover {
+      color: #000;
+      border-bottom: 3px solid #fe504f; }
