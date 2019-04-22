@@ -1,12 +1,15 @@
 .header
-   background: #999 url(../../img/bg/3-layers.png) center no-repeat fixed
+   background: #999 url(../../img/bg/3-layers.png) center no-repeat 
+   // fixed
    background-size: cover
 
    // 0
    padding: 0
    margin: 0
+.header-text
+   color: #fff
    h1
-      margin-top: 180px
+      margin-top: 100px
       font-size: 60px
       font-weight: 700
       line-height: 74px
@@ -14,23 +17,22 @@
       margin-top: 30px
       font-size: 20px
       font-weight: 400
-      line-height: 28px
-   .header-button
-      margin-top: 46px
-      & button
-         padding: 23px 52px
-         border-radius: 75%
+.header-button
+   margin-top: 46px
+   & button
+      padding: 23px 52px
+      border-radius: 75%
 
-         font-size: 20px
-         font-weight: 400
-         color: #ffffff
-         text-align: center
-      & .button-left
-         background-color: #fe504f
-      & .button-right
-         background-color: #343434
-         
-         margin-left: 30px
+      font-size: 20px
+      font-weight: 400
+      color: #ffffff
+      text-align: center
+   & .button-left
+      background-color: #fe504f
+   & .button-right
+      background-color: #343434
+      
+      margin-left: 30px
 .nav
    // df
    display: flex
