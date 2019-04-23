@@ -1,5 +1,6 @@
 .header
    background: #999 url(../../img/bg/3-layers.png) center no-repeat 
+   height: 100%
    // fixed
    background-size: cover
 
@@ -9,24 +10,33 @@
 .header-text
    color: #fff
    h1
-      margin-top: 100px
+      margin-top: 170px
+      margin-bottom: 30px
       font-size: 60px
       font-weight: 700
+      
+      font-family: verdana, sans-serif
+      // растояние между строками
       line-height: 74px
    p
-      margin-top: 30px
       font-size: 20px
       font-weight: 400
+      
+      font-family: verdana, sans-serif
+      // растояние между буквами
+      // letter-spacing: 1px
 .header-button
-   margin-top: 46px
    & button
       padding: 23px 52px
       border-radius: 75%
-
+      
+      font-family: verdana, sans-serif
       font-size: 20px
-      font-weight: 400
+      font-weight: 200
       color: #ffffff
       text-align: center
+      margin-top: 44px
+      margin-bottom: 302px
    & .button-left
       background-color: #fe504f
    & .button-right
@@ -36,17 +46,18 @@
 .nav
    // df
    display: flex
+   // раскидать блоки по краям
+   justify-content: space-between
    // aic
    align-items: center
-   padding-top: 60px
+   padding-top: 71px
+   
    & .logo
-      // mr
-      margin-right: 400px
       font-size: 32px
       // делает все буквы заглавными
       text-transform: uppercase
       // подключения шрифта
-      font-family: verdanab, sans-serif
+      font-family: verdana, sans-serif
       // цвет текста
       color: #fe504f
       // жирность текста

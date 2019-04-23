@@ -11,6 +11,7 @@ body {
 
 .header {
   background: #999 url(../../img/bg/3-layers.png) center no-repeat;
+  height: 100%;
   background-size: cover;
   padding: 0;
   margin: 0; }
@@ -18,43 +19,50 @@ body {
 .header-text {
   color: #fff; }
   .header-text h1 {
-    margin-top: 100px;
+    margin-top: 170px;
+    margin-bottom: 30px;
     font-size: 60px;
     font-weight: 700;
+    font-family: verdana, sans-serif;
     line-height: 74px; }
   .header-text p {
-    margin-top: 30px;
-    font-size: 20px;
-    font-weight: 400; }
-
-.header-button {
-  margin-top: 46px; }
-  .header-button button {
-    padding: 23px 52px;
-    border-radius: 75%;
     font-size: 20px;
     font-weight: 400;
-    color: #ffffff;
-    text-align: center; }
-  .header-button .button-left {
-    background-color: #fe504f; }
-  .header-button .button-right {
-    background-color: #343434;
-    margin-left: 30px; }
+    font-family: verdana, sans-serif; }
+
+.header-button button {
+  padding: 23px 52px;
+  border-radius: 75%;
+  font-family: verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 44px;
+  margin-bottom: 302px; }
+
+.header-button .button-left {
+  background-color: #fe504f; }
+
+.header-button .button-right {
+  background-color: #343434;
+  margin-left: 30px; }
 
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 60px; }
+  padding-top: 71px; }
   .nav .logo {
-    margin-right: 400px;
     font-size: 32px;
     text-transform: uppercase;
-    font-family: verdanab, sans-serif;
+    font-family: verdana, sans-serif;
     color: #fe504f;
     font-weight: 700;
     line-height: 32px;
@@ -98,7 +106,9 @@ body {
 .our-services .services-content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
   .our-services .services-content a {
     text-decoration: none;
     font-size: 16px;
