@@ -2,15 +2,17 @@
    .services
       // tac
       text-align: center
-      & h2
          // c
+      & h2
          color: #343434
          // fz
+         
          font-size: 24px
          // подключения шрифта
          font-family: verdana, sans-serif
          // жирность текста
          font-weight: 700
+         margin: 0
          // -
          line-height: 28px
          // текст заглавными
@@ -31,7 +33,12 @@
       display: flex
       // перенос флекса
       flex-wrap: wrap
-      
+      justify-content: center
+      align-items: center
+      text-align: center
+      .services-blok
+         
+         margin-right: 50px
       & a
          // tdn
          text-decoration: none
@@ -45,6 +52,7 @@
          line-height: 24px
          // ff
          font-family: Verdana
+         border-bottom: 3px solid #000
       & p
          // fz
          font-size: 14px
