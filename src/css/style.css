@@ -102,6 +102,11 @@ body {
       color: #fff;
       border-bottom: 3px solid #fe504f; }
 
+.line {
+  width: 60px;
+  height: 3px;
+  background-color: #fe504f; }
+
 .our-services .services {
   text-align: center; }
   .our-services .services h2 {
@@ -141,8 +146,6 @@ body {
     font-weight: 700;
     line-height: 24px;
     font-family: Verdana; }
-    .our-services .services-content a span {
-      border-bottom: 3px solid #fe504f; }
   .our-services .services-content p {
     font-size: 14px;
     color: #aeaeae;
