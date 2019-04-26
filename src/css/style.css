@@ -6,7 +6,7 @@ body {
 
 .container {
   /* центрврование */
-  width: 1140px;
+  width: 1200px;
   margin: 0 auto; }
 
 .header {
@@ -102,11 +102,6 @@ body {
       color: #fff;
       border-bottom: 3px solid #fe504f; }
 
-.line {
-  width: 60px;
-  height: 3px;
-  background-color: #fe504f; }
-
 .our-services .services {
   text-align: center; }
   .our-services .services h2 {
@@ -138,7 +133,18 @@ body {
   align-items: center;
   text-align: center; }
   .our-services .services-content .services-blok {
+    -webkit-box-pack: 700;
+    -ms-flex-pack: 700;
+    justify-content: 700;
+    font-family: verdanab, sans-serif;
+    color: #343434;
+    font-size: 16px;
     margin-right: 50px; }
+    .our-services .services-content .services-blok .services-blok-line {
+      width: 61px;
+      height: 3px;
+      background-color: #fe504f;
+      margin: 0 auto; }
   .our-services .services-content a {
     text-decoration: none;
     font-size: 16px;
@@ -154,22 +160,47 @@ body {
     line-height: 24px; }
 
 .contact-us {
-  background: #999 url(../../img/contact-us/2-layers.png) center no-repeat;
+  background: #999 url(../../img/contact-us/3-layers.png) center no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-size: cover; }
-  .contact-us p {
-    font-size: 34px;
-    color: #ffffff;
-    font-family: Verdana;
-    font-weight: 700;
-    line-height: 58px;
-    text-transform: uppercase;
-    text-align: center; }
-  .contact-us button {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px 50px; }
+  .contact-us .contact-us-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .contact-us .contact-us-content p {
+      margin-top: 112px;
+      font-size: 34px;
+      color: #ffffff;
+      font-family: Verdana;
+      font-weight: 700;
+      line-height: 58px;
+      text-transform: uppercase;
+      text-align: center; }
+    .contact-us .contact-us-content button {
+      border-radius: 50px;
+      background-color: #fe504f;
+      width: 215px;
+      height: 65px;
+      border: none;
+      font-size: 20px;
+      font-weight: 400;
+      color: #ffffff;
+      font-family: Verdana;
+      margin: 0 auto;
+      margin-bottom: 96px; }
+    .contact-us .contact-us-content button:hover {
+      background-color: #fff;
+      color: #fe504f; }
+
+.about-us .about-us-header {
+  margin-top: 80px;
+  text-align: center; }
 
 .about-us .our-team .our-team-img {
   display: -webkit-box;
@@ -177,7 +208,9 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 1300px; }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .about-us h3 {
   font-size: 24px;
@@ -204,13 +237,33 @@ body {
 .about-us .about-us-content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .about-us .about-us-content .line {
+    width: 50px;
+    height: 3px;
+    background: #000; }
   .about-us .about-us-content .What-we-do p {
     font-size: 14px;
     color: #343434;
     font-weight: 400;
-    line-height: 24px; }
-  .about-us .about-us-content .our-clients .our-clients-content img {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    width: 200px; }
+    line-height: 24px;
+    width: 580px; }
+  .about-us .about-us-content .our-clients {
+    width: 570px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .about-us .about-us-content .our-clients .our-clients-content img {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.about-us .container-about-us {
+  width: 1200px;
+  margin: 0 auto; }

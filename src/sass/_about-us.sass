@@ -1,9 +1,12 @@
 .about-us
+   & .about-us-header
+      margin-top: 80px
+      text-align: center
    & .our-team
       & .our-team-img
          display: flex
          flex-wrap: wrap
-         width: 1300px
+         justify-content: center
    & h3
       font-size: 24px
       font-family: Verdana
@@ -25,15 +28,28 @@
       text-transform: uppercase
    & .about-us-content
       display: flex
+      // раскидать блоки по краям
+      justify-content: space-between
+      & .line
+         width: 50px
+         height: 3px
+         background: #000
       & .What-we-do
          & p
             font-size: 14px
             color: #343434
             font-weight: 400
             line-height: 24px
+            width: 580px
       & .our-clients
+         width: 570px
+         flex-direction: column
+         // df
+         display: flex
          & .our-clients-content
             & img
                flex-wrap: wrap
-               width: 200px
+   .container-about-us
+      width: 1200px
+      margin: 0 auto
 
