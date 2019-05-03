@@ -33,23 +33,32 @@
       & .line
          width: 50px
          height: 3px
-         background: #000
+         background-color: #fe504f
+         margin-top: 8px
+
       & .What-we-do
          & p
             font-size: 14px
             color: #343434
             font-weight: 400
             line-height: 24px
-            width: 580px
+            width: 100%
       & .our-clients
-         width: 570px
-         flex-direction: column
-         // df
-         display: flex
-         & .our-clients-content
-            & img
-               flex-wrap: wrap
-   .container-about-us
+         width: 47%
+         & .responsive
+            // flex-direction: column
+            // margin: 0
+            // // .slick-prev,
+            // // .slick-arrow
+            // //    display: none
+            // // df
+            // display: flex
+            & .our-clients-content
+               & img
+                  flex-wrap: wrap
+                  margin: 1px
+                  display: flex
+                  flex-wrap: wrap
+   & .container-about-us
       width: 1200px
       margin: 0 auto
-
