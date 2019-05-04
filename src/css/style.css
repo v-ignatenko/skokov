@@ -232,7 +232,8 @@ body {
   color: #fe504f;
   font-weight: 700;
   line-height: 74px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 0; }
 
 .about-us .about-us-content {
   display: -webkit-box;
@@ -245,7 +246,7 @@ body {
     width: 50px;
     height: 3px;
     background-color: #fe504f;
-    margin-top: 8px; }
+    margin-bottom: 20px; }
   .about-us .about-us-content .What-we-do p {
     font-size: 14px;
     color: #343434;
@@ -263,6 +264,89 @@ body {
       display: flex;
       flex-wrap: wrap; }
 
-.about-us .container-about-us {
-  width: 1200px;
-  margin: 0 auto; }
+.employee {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+  overflow: hidden; }
+  .employee:hover .employee-name {
+    z-index: 2;
+    -webkit-transition: 500ms ease;
+    transition: 500ms ease; }
+    .employee:hover .employee-name .descr {
+      margin-top: 5px;
+      margin-left: 20px;
+      font-family: Verdana;
+      color: #fff;
+      font-weight: 700;
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px);
+      -webkit-transition: 1s ease;
+      transition: 1s ease; }
+    .employee:hover .employee-name .small {
+      margin-left: 20px;
+      font-family: Verdana;
+      color: #fff;
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px);
+      -webkit-transition: 1s ease;
+      transition: 1s ease; }
+    .employee:hover .employee-name h4 {
+      margin-top: 15px;
+      margin-left: 20px;
+      font-size: 30px;
+      line-height: 40px; }
+    .employee:hover .employee-name .line {
+      margin-top: 60px;
+      margin-left: 20px;
+      background-color: #fff;
+      width: 160px;
+      height: 1px; }
+  .employee img {
+    height: 100%;
+    width: 100%; }
+  .employee .employee-name {
+    background-color: #fe504f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    -webkit-transition: 500ms ease;
+    transition: 500ms ease; }
+    .employee .employee-name h4 {
+      font-family: Verdana;
+      color: #fff;
+      text-transform: capitalize;
+      width: 91px;
+      height: 66px;
+      margin-top: 15px;
+      margin-left: 20px;
+      font-size: 30px;
+      line-height: 40px; }
+    .employee .employee-name .line {
+      margin-top: 60px;
+      margin-left: 20px;
+      background-color: #fff;
+      width: 160px;
+      height: 1px; }
+    .employee .employee-name .descr {
+      margin-top: 5px;
+      margin-left: 20px;
+      font-family: Verdana;
+      color: #fff;
+      font-weight: 700;
+      -webkit-transform: translateX(-200px);
+      transform: translateX(-200px);
+      -webkit-transition: 1s ease;
+      transition: 1s ease; }
+    .employee .employee-name .small {
+      margin-left: 20px;
+      font-family: Verdana;
+      color: #fff;
+      -webkit-transition: 1s ease;
+      transition: 1s ease;
+      -webkit-transform: translateX(200px);
+      transform: translateX(200px); }
