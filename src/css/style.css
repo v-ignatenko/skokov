@@ -378,9 +378,13 @@ body {
     border-radius: 50%;
     margin: 0 auto;
     margin-top: 85px;
-    position: relative; }
+    position: relative;
+    -webkit-transition: 500ms;
+    transition: 500ms; }
     .strategic-content .play:hover {
-      background-color: #ffa500; }
+      background-color: #ffa500;
+      -webkit-transition: 500ms;
+      transition: 500ms; }
     .strategic-content .play span {
       border: 14px solid transparent;
       border-left: 24px solid #fff;
@@ -427,7 +431,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  background-color: #343434; }
+  background-color: #343434;
+  margin-bottom: 80px; }
   .news .news-content .block-1 {
     width: 50%; }
   .news .news-content .block-2 {
