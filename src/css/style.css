@@ -9,6 +9,11 @@ body {
   width: 1200px;
   margin: 0 auto; }
 
+.df {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .header {
   background: #999 url(../../img/bg/3-layers.png) center no-repeat;
   height: 100%;
@@ -503,3 +508,83 @@ body {
     border-bottom: 20px solid #343434;
     bottom: 100%;
     right: 8%; }
+
+.footer {
+  background: #999 url(../../img/footer/bg/3-layers.png) center no-repeat;
+  background-size: cover; }
+  .footer .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 100px; }
+    .footer .contact .contact-left {
+      width: 50%; }
+      .footer .contact .contact-left h4 {
+        margin-top: 100px;
+        color: #fe504f;
+        font-family: Verdana;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        text-transform: uppercase; }
+      .footer .contact .contact-left p {
+        color: #ffffff;
+        font-family: Verdana;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px; }
+      .footer .contact .contact-left .line {
+        margin-top: 30px; }
+    .footer .contact .contact-right {
+      width: 50%; }
+      .footer .contact .contact-right h4 {
+        margin-top: 100px;
+        margin-bottom: 0;
+        color: #fe504f;
+        font-family: Verdana;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        text-transform: uppercase; }
+      .footer .contact .contact-right p {
+        color: #ffffff;
+        font-family: Verdana;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px; }
+      .footer .contact .contact-right a {
+        color: #ffffff;
+        font-family: Verdana;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 74px;
+        background-color: #fe504f;
+        padding: 45px 14px;
+        border-radius: 50px; }
+
+.line {
+  background-color: #fe504f;
+  width: 51px;
+  height: 3px;
+  margin-top: 28px; }
+
+.contact-left-contace {
+  margin-top: 50px; }
+  .contact-left-contace img {
+    width: 6%;
+    margin: 5px; }
+  .contact-left-contace p {
+    color: #ffffff;
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase; }
+
+form input {
+  margin-top: 10px;
+  background-color: transparent;
+  overflow: none;
+  padding: 20px;
+  padding-right: 50%;
+  border: double; }
