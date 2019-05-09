@@ -17,7 +17,8 @@ body {
 div,
 span,
 input,
-nav {
+nav,
+textarea {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -519,8 +520,9 @@ nav {
     right: 8%; }
 
 .footer {
-  background: #999 url(../../img/footer/bg/3-layers.png) center no-repeat;
-  background-size: cover; }
+  background: #999 url(../../img/footer/bg/bg.png) center no-repeat;
+  background-size: cover;
+  position: relative; }
   .footer .contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -583,7 +585,8 @@ nav {
     line-height: 20px;
     text-transform: uppercase; }
 
-form input {
+form input,
+form textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -594,9 +597,24 @@ form input {
   margin-top: 7px;
   background-color: transparent;
   overflow: none;
+  color: #aeaeae;
+  resize: none;
+  outline: none;
   padding: 20px;
   width: 100%;
   border: double; }
+  form input::-webkit-input-placeholder,
+  form textarea::-webkit-input-placeholder {
+    color: #afafaf; }
+  form input:-ms-input-placeholder,
+  form textarea:-ms-input-placeholder {
+    color: #afafaf; }
+  form input::-ms-input-placeholder,
+  form textarea::-ms-input-placeholder {
+    color: #afafaf; }
+  form input::placeholder,
+  form textarea::placeholder {
+    color: #afafaf; }
 
 form .button-submit {
   margin-top: 30px;
@@ -619,3 +637,32 @@ form .button-submit {
       color: #fe504f;
       -webkit-transition: 500ms;
       transition: 500ms; }
+
+.shadow:after {
+  position: absolute;
+  content: '';
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2; }
+
+.z-index-3 {
+  z-index: 99;
+  position: relative; }
+
+.footer-nav {
+  background-color: #343434;
+  color: #fff; }
+  .footer-nav .container {
+    padding: 30px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .footer-nav .container .social {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .footer-nav .container .social a {
+        margin-right: 40px; }

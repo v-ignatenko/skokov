@@ -1,12 +1,15 @@
 .footer
-   background: #999 url(../../img/footer/bg/3-layers.png) center no-repeat
+   background: #999 url(../../img/footer/bg/bg.png) center no-repeat
    // display: flex
    // fixed
    background-size: cover
+   position: relative
+   
    & .contact
       display: flex
       padding-bottom: 100px
       flex-wrap: wrap
+      
       & .contact-left
          width: 50%
          & h4
@@ -63,16 +66,26 @@
       line-height: 20px
       text-transform: uppercase
 form
-   & input
+   & input,
+   textarea
       display: flex
       flex-direction: column
       margin-top: 7px
       background-color: transparent
+      // !! хайден
       overflow: none
+      color: #aeaeae
+      resize: none
+      // отключиние обврдки
+      outline: none
       padding: 20px
       width: 100%
       
       border: double
+      // &:focus
+      //    border: 10px solid #fff
+      &::placeholder
+         color: #afafaf
    & .button-submit
       margin-top: 30px
       
@@ -90,4 +103,30 @@ form
             background-color: #fff
             color: #fe504f
             transition: 500ms
+.shadow
+   &:after
+      position: absolute
+      content: ''
+      top: 0px
+      left: 0px
+      bottom: 0px
+      right: 0px
+      background: rgba(0, 0, 0, 0.5)
+      z-index: 2
 
+.z-index-3
+   
+   z-index: 99
+   position: relative
+.footer-nav
+   background-color: #343434
+   color: #fff
+   .container
+      padding: 30px
+      
+      justify-content: space-between
+      .social
+         display: flex
+         & a
+            margin-right: 40px
+            &:header

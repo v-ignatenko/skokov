@@ -641,10 +641,11 @@
    </section>
    <!-- contact -->
    <footer class="footer">
+      <div class="shadow">
       <!-- контеинер -->
       <div class="container">
          <!-- главний блок -->
-         <div class="contact">
+         <div class="contact z-index-3">
             <!-- левый блок -->
             <div class="contact-left">
                <h4>
@@ -687,13 +688,13 @@
                   Please contact us using contact form below.
                </p>
                <form action="">
-                  <input type="text" placeholder="Name">
+                  <input required type="text" placeholder="Name">
                   
-                  <input type="text" placeholder="Email">
+                  <input required type="email" placeholder="Email">
                   
-                  <input type="text" placeholder="Subject">
+                  <input required type="text" placeholder="Subject">
                   
-                  <input type="text" placeholder="Message">
+                  <textarea required type="text" placeholder="Message"></textarea>
                   <div class="button-submit">
 
                      <button type="submit">
@@ -703,6 +704,21 @@
                </form>
             </div>
          </div>
+      </div>
+         <div class="footer-nav z-index-3">
+            <div class="container df">
+            <div class="footer-text">
+               © 2014 SKOKOV - all rights reserved
+            </div>
+            <div class="social">
+               <a href="#"><img src="/src/img/footer/social/linkedin.png" alt=""></a>
+               <a href="#"><img src="/src/img/footer/social/facebook.png" alt=""></a>
+               <a href="#"><img src="/src/img/footer/social/twitter.png" alt=""></a>
+               <a href="#"><img src="/src/img/footer/social/youtube.png" alt=""></a>
+            </div>
+            </div>
+         </div>
+      
       </div>
    </footer>
    <script
