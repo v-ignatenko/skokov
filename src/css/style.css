@@ -14,6 +14,13 @@ body {
   display: -ms-flexbox;
   display: flex; }
 
+div,
+span,
+input,
+nav {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 .header {
   background: #999 url(../../img/bg/3-layers.png) center no-repeat;
   height: 100%;
@@ -198,10 +205,12 @@ body {
       color: #ffffff;
       font-family: Verdana;
       margin: 0 auto;
-      margin-bottom: 96px; }
+      margin-bottom: 96px;
+      overflow: none; }
     .contact-us .contact-us-content button:hover {
       background-color: #fff;
-      color: #fe504f; }
+      color: #fe504f;
+      overflow: none; }
 
 .about-us .about-us-header {
   margin-top: 80px;
@@ -516,7 +525,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-bottom: 100px; }
+    padding-bottom: 100px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
     .footer .contact .contact-left {
       width: 50%; }
       .footer .contact .contact-left h4 {
@@ -552,15 +563,6 @@ body {
         font-size: 14px;
         font-weight: 400;
         line-height: 20px; }
-      .footer .contact .contact-right a {
-        color: #ffffff;
-        font-family: Verdana;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 74px;
-        background-color: #fe504f;
-        padding: 45px 14px;
-        border-radius: 50px; }
 
 .line {
   background-color: #fe504f;
@@ -582,9 +584,38 @@ body {
     text-transform: uppercase; }
 
 form input {
-  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 7px;
   background-color: transparent;
   overflow: none;
   padding: 20px;
-  padding-right: 50%;
+  width: 100%;
   border: double; }
+
+form .button-submit {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  form .button-submit button {
+    background-color: #fe504f;
+    padding: 14px 45px;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    -webkit-transition: 500ms;
+    transition: 500ms; }
+    form .button-submit button:hover {
+      background-color: #fff;
+      color: #fe504f;
+      -webkit-transition: 500ms;
+      transition: 500ms; }
