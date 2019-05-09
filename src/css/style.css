@@ -6,7 +6,7 @@ body {
 
 .container {
   /* центрврование */
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto; }
 
 .df {
@@ -666,3 +666,20 @@ form .button-submit {
       display: flex; }
       .footer-nav .container .social a {
         margin-right: 40px; }
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 0px 30px; }
+  .What-we-do {
+    padding: 0 15px; }
+  .our-clients {
+    padding-left: 45px; }
+  .slick-dots {
+    right: 20px; }
+  .our-team h4,
+  .our-team .line {
+    margin-left: 13px; }
+  .kol-news h4 {
+    font-size: 17px; }
+  .contact {
+    padding: 0 25px; } }
