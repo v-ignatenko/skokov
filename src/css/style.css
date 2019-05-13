@@ -682,4 +682,17 @@ form .button-submit {
   .kol-news h4 {
     font-size: 17px; }
   .contact {
-    padding: 0 25px; } }
+    padding: 0 25px 0 25px; }
+  .contact-left-contace {
+    margin-top: 30px; } }
+
+@media screen and (max-width: 768px) {
+  .services-content {
+    padding: 10px; }
+  .about-us-content {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 65px; }
+    .about-us-content .What-we-do,
+    .about-us-content .our-clients {
+      padding: 0; } }
