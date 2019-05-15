@@ -1,0 +1,118 @@
+.burger
+	height: 50px
+	background-color: #303030
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	z-index: 10
+	display: none
+.menu-btn
+	margin-right: 10px
+	display: block
+	width: 40px
+	height: 40px
+	background-color: #fff
+	border-radius: 50%
+	position: relative
+
+.menu-btn span
+	position: absolute
+	top: 50%
+	margin-top: -1px
+	left: 50%
+	margin-left: -10px
+	width: 20px
+	height: 2px
+	background-color: #222
+
+.menu-btn span
+	&::before
+		position: absolute
+		top: 50%
+		margin-top: -1px
+		left: 50%
+		margin-left: -10px
+		width: 20px
+		height: 2px
+		background-color: #222
+	&::after
+		position: absolute
+		top: 50%
+		margin-top: -1px
+		left: 50%
+		margin-left: -10px
+		width: 20px
+		height: 2px
+		background-color: #222
+
+.menu-btn span	
+	&::before
+		content: ''
+		display: block
+		transition: 0.2s
+	&::after
+		content: ''
+		display: block
+		transition: 0.2s
+
+.menu-btn span
+	&::before
+		transform: translateY(-5px)
+.menu-btn span
+	&::after
+		transform: translateY(5px)
+
+.menu-btn_active span
+	&::before
+		transform: rotate(-35deg)
+		transform-origin: left bottom
+		width: 10px
+.menu-btn_active span
+	&::after
+		transform: rotate(35deg)
+		transform-origin: left top
+		width: 10px
+.menu-block
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	padding: 5px 0
+	box-sizing: border-box
+
+.menu-nav
+	background-color: #fff
+	height: 40px
+	line-height: 37px
+	padding-left: 20px
+	padding-right: 20px
+	margin-right: -35px
+	transition: 0.2s
+	border-radius: 50px
+	transform-origin: right center
+	transform: scaleX(0)
+	// translateX(0%)
+	opacity: 0
+	&_link
+		display: inline-block
+		text-decoration: none
+		margin-right: 20px
+		font-family: 'Lato', sans-serif
+		color:  #ff4200
+.menu-nav_active
+	transform: scaleX(1)
+	// translateX(0%)
+	opacity: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
