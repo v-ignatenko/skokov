@@ -664,6 +664,12 @@ textarea {
         font-weight: 700;
         line-height: 32px;
         text-transform: uppercase; }
+      .footer .contact .contact-left h6 {
+        color: #ffffff;
+        font-family: Verdana;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px; }
       .footer .contact .contact-left p {
         color: #ffffff;
         font-family: Verdana;
@@ -897,7 +903,15 @@ form .button-submit {
   .about-us .about-us-content .our-clients {
     width: 100%; }
   .slick-dots {
-    margin: 0px -41px; } }
+    margin: 0px -41px; }
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: -webkit-center; }
+  .footer .contact .contact-left p {
+    font-size: 10px; } }
 
 @media screen and (max-width: 800px) {
   .about-us .about-us-content .our-clients .responsive .our-clients-content img {
@@ -939,4 +953,24 @@ form .button-submit {
       border-radius: 0 25px 25px 0; }
   .about-us .about-us-content .our-clients .responsive .our-clients-content img {
     width: 50%;
-      width-margin-bottom: 100px; } }
+      width-margin-bottom: 100px; }
+  #footer .contact .contact-right {
+    width: 100%; }
+  #footer .contact .contact-left {
+    width: 100%; }
+  .contact-left-contace {
+    margin: 0 17%; } }
+
+@media screen and (max-width: 425px) {
+  .about-us .about-us-content .our-clients .responsive .our-clients-content img {
+    width: 100%; }
+  .contact-left-contace {
+    margin: 0 1%; }
+  .contact-us .contact-us-content p {
+    font-size: 30px; } }
+
+@media screen and (max-width: 375px) {
+  .contact-us .contact-us-content p {
+    font-size: 25px; }
+  .footer-nav .container .socia {
+    display: inline-block; } }
